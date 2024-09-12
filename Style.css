@@ -1,0 +1,133 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: red;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff4757;
+}
+
+.discord-btn-header {
+    margin-top: 10px;
+}
+
+/* Section */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+#about {
+    background-image: url('img/concess.png'); /* Using your uploaded image */
+}
+
+#features {
+    background-image: url('img/features-bg.jpg'); /* If you want to use concess.png here, replace with 'concess.png' */
+}
+
+#reviews {
+    background-image: url('img/imagef-bg.jpg'); /* Replace with the path to your preferred image */
+}
+
+#join {
+    background-image: url('img/join-bg.jpg'); /* Or reuse concess.png if needed */
+}
+
+/* Section contenu */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+.review {
+    margin: 20px 0;
+}
+
+/* Bouton Discord */
+.discord-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7289da;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.discord-btn:hover {
+    background-color: #5865f2;
+}
+
+/* Animation smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Visibility animation for sections */
+.section.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.section {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+/* Feature image styling */
+.feature-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feature-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
